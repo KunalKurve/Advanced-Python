@@ -1,0 +1,3 @@
+123:lays:very crispy:chips:40
+125:maggi:yummy:snacks:60
+123:nachos:very crispy:chips:120
