@@ -1,0 +1,12 @@
+marks=[3,5,6,"osheen",True]
+# print(marks)
+# print(type(marks))
+# print(marks[0])
+# print(marks[1])
+# print(marks[2])
+# print(marks[3])
+print(marks[-4])
+print(marks[len(marks)-2])
+print(marks[5-3])
+
+
