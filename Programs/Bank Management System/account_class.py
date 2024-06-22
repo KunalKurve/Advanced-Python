@@ -6,6 +6,7 @@ class Account(ABC):
     @staticmethod
     def __generatecode(actype):
         acno=actype+str(Account.cnt)
+        
         return acno
 
     def __init__(self, acname="", acbal = 0,acpin = 0, acno = 0,actype='s'):
@@ -94,7 +95,6 @@ class CurrentAc(Account):
     min_bal = 1000
 
     def set_withdraw(self, amount):
-        self._acbal=self.acbal-amount
         self.set_acbal(self.get_acbal()-amount)
 
 

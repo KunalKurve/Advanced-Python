@@ -12,10 +12,6 @@ def findAccount(acno):
             return ind,ob
     return -1,None
 
-# def displayall():
-#     for ac in aclst:
-#         print(ac)
-
 # Case 1: Add New Account
 def addNewAccount(ch):
     name=input("Enter Name: ")
@@ -35,7 +31,6 @@ def addNewAccount(ch):
     else:
         print("Invalid Choice")
     aclst.append(saving)
-    # displayall()
     # for ob in aclst:
     #     print(ob)
 
@@ -109,8 +104,6 @@ def checkBal(acno, acpin):
 # Case 6: Close Account
 def closeAccount(acno, acpin):
     for indx,ob in enumerate(aclst):
-        # print(ob)
-        # print(acno)
         if ob.get_acno() == acno and ob.get_acpin() == acpin:
             ans=input(f"{ob.get_acno()} {ob.get_acname()} Do you want to delete?(y/n): ")
             if ans=="y":
@@ -118,8 +111,8 @@ def closeAccount(acno, acpin):
                 return 1
             else:
                 return 2
-    else:
-        return 3
+        else:
+            return 3
 
 choice=0
 while choice!=7:

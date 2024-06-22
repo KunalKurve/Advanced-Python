@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 print(np.random.randn(5))
 s = pd.Series(np.random.randn(5), 
-              index=['a', 'b', 'c', 'd', 'e'])  #Default index: 0,1,2,3.....
+              index=['a', 'b', 'c', 'd', 'e'])
 print(s)
 print()
 print(s[s<1]) #filter series and display all values which are < 1
