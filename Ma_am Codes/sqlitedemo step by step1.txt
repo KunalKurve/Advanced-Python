@@ -1,0 +1,61 @@
+
+download the zip file from the link
+https://www.sqlite.org/download.html
+
+download following file
+sqlite-tools-win32-x86-3410100.zip
+
+
+1. create a folder c:\sqlite3
+2. extract files form sqlite-tools-win32-x86-3410100.zip into c:\sqlite3
+3. Set the path variable
+     a. on start button type environment > edit system environmet variable > environmet variable
+     select path variable > click on edit > new > paste the path
+     D:\sqlite3\sqlite-tools-win32-x86-3380500 ---> the path is the folder that has sqlite3.exe file
+
+4. open new cmd
+5. change the folder where yoy save your pythondemos
+6. c:\mydata\pythondemo>sqlite3 mydb.db
+7. It will change the prompt to 
+sqlite>
+
+8. Create table in sqlite3
+     ------sqlite3
+     create table product(pid int,pname text,qty int,price float,cid int);
+    
+9. To insert data
+     insert into product values(10,'chair',3,2345,1);
+     insert into product values(20,'table',30,3456,2);
+     insert into product values(30,'shelf',10,4567,3);
+10. To view records
+     select * from product;
+12. To delete record
+     delete from product where pid=20;
+13. See the records
+     select * from product;
+14. To modify the values in the record
+     update product set pname="study_table",qty=5 where pid=30;
+15. view records
+select * from mytable
+15. modify qty of all records 
+    update product set qty=qty+10 where pid=30;
+16. To display records in sorted order
+    select * from product
+    order by pname;
+	
+
+
+Write a program using python and sqlite to perform crud operation on employee table
+use following commands in sqlite prompt
+create table employee(eid int,ename text,sal int,desg text);
+insert into employee values(11,'Rajan',2345,'designer');
+insert into employee values(12,'Revati',2555,'ux designer');	
+insert into employee values(13,'Prajakta',2222,'Manager');
+
+select * from employee	
+	
+
+   insert into product values(10,'chair',3,2345);
+     insert into product values(20,'table',30,3456,2);
+     insert into product values(30,'shelf',10,4567,3);
+
